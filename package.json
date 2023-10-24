@@ -1,0 +1,15 @@
+{
+  "name": "vite_press_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 8080",
+    "main": "bash main.sh"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.23"
+  }
+}
