@@ -21,7 +21,7 @@ export default {
     ["link", { rel: "icon", href: "/favicon.ico" }],
   ],
   // 部署到github相关的配置
-  base: "/blog/",
+  base: "/vitepress_empty/",
   markdown: {
     // 代码块显示行号
     lineNumbers: true,
@@ -35,7 +35,7 @@ export default {
     nav: navConf,
 
     // 如果你希望自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏
-    sidebar: "auto",
+    // sidebar: "auto",
 
     // 侧边栏
     sidebar: sidebarConf,
@@ -69,7 +69,7 @@ export default {
 
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     // 当你提供了 themeConfig.repo 选项，将会自动在每个页面的导航栏生成生成一个 GitHub 链接，以及在页面的底部生成一个 "Edit this page" 链接
-    repo: "zmx2321/blog",
+    repo: "zmx2321/vitepress_empty",
 
     // 假如文档不是放在仓库的根目录下
     docsDir: "docs",
@@ -96,7 +96,7 @@ export default {
     "@vuepress/back-to-top", // 返回顶部插件
     "@vuepress/medium-zoom", // 图片预览插件
     "@vuepress/nprogress", //页面顶部进度条
-    [
+    /* [
       "vuepress-plugin-comment",
       {
         choosen: "valine",
@@ -108,7 +108,7 @@ export default {
           visitor: false, // 阅读量统计
         },
       },
-    ],
+    ], */
 
     // 移除console
     // drop_console和pure_funcs的区别，drop_console是把console.log()注释掉了，而pure_funcs是把console.log()移除掉了
