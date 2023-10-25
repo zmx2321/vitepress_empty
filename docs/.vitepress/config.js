@@ -32,6 +32,9 @@ export default {
     // 增加导航栏 Logo ，Logo 可以被放置在公共文件目录
     // logo: '/assets/img/logo.png',
 
+    // 右侧边栏配置，默认值是"In hac pagina"
+    outlineTitle: "本页目录",
+
     // 导航栏
     nav: navConfig,
 
