@@ -1,7 +1,12 @@
 const navConf = require("../config/navconfig");
+// import { getSideBar } from "vitepress-plugin-autobar";
 const sidebarConf = require("../config/sidebarConf");
+/* import {
+  vitePresspagesDemo1,
+  vitePresspagesDemo2,
+} from "../config/sidebarConf"; */
 
-module.exports = {
+export default {
   title: "zmx的前端日志",
   description: "zmx2321",
 
@@ -26,26 +31,14 @@ module.exports = {
     // 增加导航栏 Logo ，Logo 可以被放置在公共文件目录
     // logo: '/assets/img/logo.png',
 
-    // 导航上的logo
-    logo: "/logo.png",
-    // 隐藏logo右边的标题
-    siteTitle: false,
-
     // 导航栏
     nav: navConf,
+
     // 如果你希望自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏
-    // sidebar: 'auto',
+    sidebar: "auto",
 
     // 侧边栏
-    // sidebar: sidebarConf,
-    sidebar: {
-      text: "HTML",
-      children: [
-        { text: "基础", link: "/HTML/" },
-        { text: "进阶", link: "/HTML/advanced" },
-      ],
-      sidebarDepth: 3,
-    },
+    sidebar: sidebarConf,
 
     /**
      * 0 禁用header
@@ -99,6 +92,10 @@ module.exports = {
 
   // 插件
   plugins: [
+    "@vuepress/active-header-links", // 页面滚动时自动激活侧边栏链接的插件
+    "@vuepress/back-to-top", // 返回顶部插件
+    "@vuepress/medium-zoom", // 图片预览插件
+    "@vuepress/nprogress", //页面顶部进度条
     [
       "vuepress-plugin-comment",
       {
