@@ -4,7 +4,15 @@
     "source.fixAll.stylelint": true
   },
   "stylelint.enable": true,
-  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass", "html"],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "vue",
+    "sass",
+    "html"
+  ],
   "files.eol": "\n",
   "typescript.tsdk": "node_modules/typescript/lib",
   "[vue]": {
@@ -85,7 +93,9 @@
     "truetype",
     "unplugin",
     "VITE",
+    "vitepress",
     "vuedraggable",
+    "vuepress",
     "vueuse",
     "Vuex",
     "wangeditor",
