@@ -1,7 +1,5 @@
 <template>
-  <div class="site-footer">
-    网址导航自定义底部信息
-  </div>
+  <div class="site-footer">自定义底部信息</div>
 </template>
 <script setup>
 const props = defineProps({

@@ -1,3 +1,4 @@
+// 头部导航
 const navConfig = require("./config/navConfig");
 const sidebarConfig = require("./config/sideBarConfig");
 
@@ -5,7 +6,9 @@ export default {
   title: "zmx的前端日志",
   description: "zmx2321",
 
-  // 部署到github相关的配置
+  // 打包目录
+  outDir: "../dist",
+
   base: "/vitepress_empty/",
 
   locales: {
@@ -14,28 +17,31 @@ export default {
     },
   },
 
-  // 注入到当前页面的 HTML <head> 中的标签
   head: [
-    // 增加一个自定义的 favicon(网页标签的图标)
+    // 添加图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
   ],
-
-  markdown: {
-    lineNumbers: true, // 代码块显示行号
-  },
 
   // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
   lastUpdated: true, // string | boolean
 
-  // 导航栏
-  themeConfig: {
-    // 增加导航栏 Logo ，Logo 可以被放置在公共文件目录
-    // logo: '/assets/img/logo.png',
+  // 代码块显示行号
+  markdown: {
+    lineNumbers: true,
+  },
 
-    // 导航栏
+  // 主题配置
+  themeConfig: {
+    // 导航上的logo
+    logo: "/logo.png",
+
+    // 隐藏logo右边的标题
+    siteTitle: false,
+
+    // 导航栏配置
     nav: navConfig,
 
-    // 侧边栏
+    // 左侧导航栏
     sidebar: sidebarConfig,
 
     /**
@@ -45,6 +51,9 @@ export default {
      */
     sidebarDepth: 2,
 
+    // 右侧边栏配置，默认值是"In hac pagina"
+    outlineTitle: "本页目录",
+
     // 编辑链接
     editLink: {
       pattern: "https://github.com/zmx2321/vitepress_empty",
@@ -53,23 +62,28 @@ export default {
 
     // 站点页脚配置
     footer: {
+      // message: "Released under the MIT License",
       copyright: "MIT Licensed | Copyright © 2020-present zmx2321@gmail.com",
     },
 
-    // lastUpdated: 'Last Updated', // string | boolean
+    // 社交和项目链接地址配置
+    socialLinks: [
+      { icon: "github", link: "https://github.com/zmx2321/vitepress_empty" },
+      // 也可以自定义svg的icon:
+      // {
+      //   icon: {
+      //     svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>',
+      //   },
+      //   link: "...",
+      // },
+    ],
     // 搜索
     algolia: {
       apiKey: "your_api_key",
       indexName: "index_name",
     },
-
-    returnToTopLabel: "返回顶部",
-
-    // 你可以通过 themeConfig.lastUpdated 选项来获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
+    // returnToTopLabel: "返回顶部",
     lastUpdatedText: "最后更新", // string
-
-    // 默认值：false  显示所有页面的标题链接
-    // displayAllHeaders: true,
 
     // 默认情况下，当用户通过滚动查看页面的不同部分时，嵌套的标题链接和 URL 中的 Hash 值会实时更新
     activeHeaderLinks: true,
@@ -81,20 +95,11 @@ export default {
     // 假如文档不是放在仓库的根目录下
     docsDir: "docs",
 
-    // 默认是 false, 设置为 true 来启用
-    editLinks: true,
-
-    // 默认为 "Edit this page"
-    editLinkText: "在 GitHub 上编辑此页",
-
     // 启用页面滚动效果
     smoothScroll: true,
 
     // 是否开启 PWA
     serviceWorker: true,
-
-    // 显示所有页面的标题链接
-    // displayAllHeaders: true // 默认值：false
   },
 
   // 插件
