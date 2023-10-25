@@ -1,9 +1,0 @@
-node_modules/
-/yarn.lock
-/package-lock.json
-docs/.vitepress/dist*
-docs/.vitepress/cache*
-# docs/.vuepress/theme/
-docs/pages/accumulation/.DS_Store
-docs/.DS_Store
-.DS_Store
