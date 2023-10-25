@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   // 以docs为根目录
   { text: "Home", link: "/" },
 
