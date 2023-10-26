@@ -15,6 +15,7 @@ module.exports = [
     items: [
       { text: "note1", link: "/pages/note/note1/index" },
       { text: "note2", link: "/pages/note/note2/index" },
+      { text: "note3", link: "/pages/note/note3/index" },
     ],
   },
   {
