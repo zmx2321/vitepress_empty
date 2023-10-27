@@ -1,5 +1,7 @@
 <template>
   <div class="site-footer">自定义底部信息</div>
+
+  <backTop />
 </template>
 <script setup>
 const props = defineProps({
