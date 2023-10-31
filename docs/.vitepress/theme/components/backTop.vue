@@ -27,7 +27,7 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 :root {
   --back-to-top-z-index: 9999;
   --back-to-top-color: #ddd;
