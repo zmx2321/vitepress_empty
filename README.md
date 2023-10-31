@@ -19,10 +19,8 @@ vitePress-project
     |─about               // 存放关于我们文档的目录
     |─examples            // 存放组件使用文档的目录（引入第三方组件使用的案例页面）
     |─guide               // 存放开始使用向导页面文档的目录
+    |─site                // 快捷导航
     |─pages               // 主要笔记目录
-      |demo               // 文档demo
-      |─note              // 笔记
-      |─site              // 存放前端导航文档的目录
     |─public              // 静态资源存放目录（图片）
     |─index.md            // 首页内容配置
 ```
