@@ -1,7 +1,7 @@
 ---
   layout: home
   hero:
-    image: 
+    image:
       src: /logo.png
       alt: zmx2321
     name: zmx的前端日志
