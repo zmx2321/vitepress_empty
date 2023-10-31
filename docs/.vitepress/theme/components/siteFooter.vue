@@ -1,5 +1,5 @@
 <template>
-  <div class="site-footer">自定义底部信息</div>
+  <section class="site-footer">自定义底部信息</section>
 
   <backTop />
 </template>

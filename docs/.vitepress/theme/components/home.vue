@@ -1,5 +1,5 @@
 <template>
-  <div class="ui-home">
+  <section class="ui-home">
     <h2 class="ui-title">前端开源项目推荐</h2>
     <ul class="ui-project">
       <li class="item" v-for="v in siteData" :key="v.name">
@@ -9,7 +9,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </section>
   <BackTop></BackTop>
 </template>
 <script setup>
