@@ -21,9 +21,9 @@ module.exports = [
   {
     text: "前端导航",
     items: [
-      { text: "前端综合", link: "/pages/site/page" },
-      { text: "HTML/CSS", link: "/pages/site/html-css" },
-      { text: "框架组件", link: "/pages/site/framework" },
+      { text: "前端综合", link: "/site/page" },
+      { text: "HTML/CSS", link: "/site/html-css" },
+      { text: "框架组件", link: "/site/framework" },
     ],
   },
 
