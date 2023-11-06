@@ -1,5 +1,5 @@
-const navConfig = require("./config/navConfig");
-const sidebarConfig = require("./config/sideBarConfig");
+const navConfig = require("./config/nav-config");
+const sidebarConfig = require("./config/sidebar-config");
 
 export default {
   title: "zmx的前端日志",
@@ -98,6 +98,8 @@ export default {
 
     // 显示所有页面的标题链接
     // displayAllHeaders: true // 默认值：false
+
+    socialLinks: [{ icon: "github", link: "https://github.com/zmx2321/vitepress_empty" }], // 可以连接到 github
   },
 
   // 插件

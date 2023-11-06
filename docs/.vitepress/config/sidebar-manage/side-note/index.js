@@ -6,21 +6,21 @@ const noteConfig1 = () => [
         text: "demo1",
         link: "/pages/demo/demo1/",
       }, */
-      ...require("./sideNoteItems/note1ConfigItems"),
-      ...require("./sideNoteItems/note2ConfigItems"),
-      ...require("./sideNoteItems/note3ConfigItems"),
+      ...require("./side-note-items/note1-config-items"),
+      ...require("./side-note-items/note2-config-items"),
+      ...require("./side-note-items/note3-config-items"),
     ],
   },
 ];
 const noteConfig2 = () => [
   {
-    items: require("./sideNoteItems/note1ConfigItems"),
+    items: require("./side-note-items/note1-config-items"),
   },
   {
-    items: require("./sideNoteItems/note2ConfigItems"),
+    items: require("./side-note-items/note2-config-items"),
   },
   {
-    items: require("./sideNoteItems/note3ConfigItems"),
+    items: require("./side-note-items/note3-config-items"),
   },
 ];
 

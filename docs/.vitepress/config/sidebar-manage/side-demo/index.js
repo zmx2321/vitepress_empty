@@ -6,7 +6,7 @@ export const demo1Config = [
         text: "demo1",
         link: "/pages/demo/demo1/",
       },
-      ...require("./sideDemoItems/demo1ConfigItems"),
+      ...require("./side-demo-items/demo1-config-items"),
     ],
   },
 ];
@@ -18,13 +18,13 @@ export const demo2Config = [
         text: "demo2",
         link: "/pages/demo/demo2/",
       },
-      ...require("./sideDemoItems/demo2ConfigItems"),
+      ...require("./side-demo-items/demo2-config-items"),
     ],
   },
 ];
 export const demo3Config = [
   {
     text: "demo3",
-    items: require("./sideDemoItems/demo3ConfigItems"),
+    items: require("./side-demo-items/demo3-config-items"),
   },
 ];

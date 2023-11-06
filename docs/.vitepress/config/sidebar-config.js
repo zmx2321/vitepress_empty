@@ -1,7 +1,7 @@
-import * as examples from "./sidebarManage/examples"; // examples
+import * as examples from "./sidebar-manage/examples"; // examples
 
-import * as sideDemo from "./sidebarManage/sideDemo"; // demo
-import * as sideNote from "./sidebarManage/sideNote"; // note
+import * as sideDemo from "./sidebar-manage/side-demo"; // demo
+import * as sideNote from "./sidebar-manage/side-note"; // note
 
 module.exports = {
   // examples
